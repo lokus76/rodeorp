@@ -1,0 +1,741 @@
+<script src="/cdn-cgi/apps/head/c9tEh4G7R9EE5BPPFVgc9tXx3Y4.js"></script><script>
+  window.addEventListener("hashchange", function () {
+      window.scrollTo(window.scrollX, window.scrollY - 100);
+  });
+
+      // Cuando el usuario se desplaza hacia abajo 20 px.
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // Cuando el usuario haga clic en el botón, desplácese hasta la parte superior.
+    function topFunction() {
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, firefox, etc.
+    }
+  </script>
+<style>
+
+        .row {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+
+        .oaerror p {
+            margin: 0;
+        }
+
+        .error-notice {
+            margin: 5px 5px; /* Making sure to keep some distance from all side */
+        }
+
+        .oaerror {
+            width: 100%; /* Configure it fit in your design  */
+            margin: 0 auto; /* Centering Stuff */
+            background-color: #f4f7f3; /* Default background */
+            padding: 20px;
+            border: 1px solid rgb(9, 250, 41);
+            border-left-width: 5px;
+            border-radius: 3px;
+            margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        .oaerror h5{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .danger hr {
+            background: #d9534f;
+        }
+
+        .danger {
+            border-left-color: #d9534f; /* Left side border color */
+        }
+
+
+        .warning hr {
+            background:#f0ad4e;
+        }
+        .warning {
+            border-left-color: #f0ad4e;
+        }
+
+        .info hr{
+            background: #5bc0de;
+        }
+        .info {
+            border-left-color: #5bc0de;
+        }
+
+        .success hr{
+            background: #2b542c;
+        }
+        .success {
+            border-left-color: #2b542c;
+        }
+
+		.agustinprs hr{
+            background: #FF9900;
+        }
+        .agustinprs {
+            border-left-color: #FF9900;
+        }
+
+        .sort hr{
+            background: #000000;
+        }
+        .sort {
+            border-left-color: #000000;
+        }
+
+        .gult hr{
+            background: #FFD700;
+        }
+        .gult {
+            border-left-color: #FFD700;
+        }
+
+        .lightgreen hr{
+            background: #ADFF2F;
+        }
+        .lightgreen {
+            border-left-color: #ADFF2F;
+        }
+
+        .brown hr{
+            background: #a805e9;
+        }
+        .brown {
+            border-left-color: #ea00ff;
+        }
+
+        .pink hr{
+            background: #FF66FF;
+        }
+        .pink {
+            border-left-color: #FF66FF;
+        }
+
+        .orange hr{
+            background: #c97a57;
+        }
+        .orange {
+            border-left-color: #c97a57;
+        }
+
+        .grey hr{
+            background: #737373;
+        }
+        .grey {
+            border-left-color: #737373;
+        }
+
+        .greenb hr{
+            background: #00a3aa;
+        }
+
+        .greenb {
+            border-left-color: #00a3aa;
+        }
+
+    .topbox{
+          padding: 15px;
+          padding-bottom: 15px;
+          background-color: #2C2F33;
+          border-radius: 10px;
+        }
+    .topboxagustinprs{
+              margin: 4px;
+              padding: 4px;
+              background-color: orange;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+            }
+    .topboxdanger{
+              margin: 4px;
+              padding: 4px;
+              background-color: #1a853d;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+                }
+    .topboxinfo{
+              margin: 4px;
+              padding: 4px;
+              background-color: #ff0000;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxwarning{
+              margin: 4px;
+              padding: 4px;
+              background-color: #0084ff;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsuccess{
+              margin: 4px;
+              padding: 4px;
+              background-color: #700909;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsort{
+              margin: 4px;
+              padding: 4px;
+              background-color: rgb(20, 94, 20);
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgult{
+              margin: 4px;
+              padding: 4px;
+              background-color: #5e5000;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxlightgreen{
+              margin: 4px;
+              padding: 4px;
+              background-color: #518109;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxbrown{
+              margin: 4px;
+              padding: 4px;
+              background-color: #cc00ff;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxpink{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FF66FF;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxorange{
+              margin: 4px;
+              padding: 4px;
+              background-color: #c97a57;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgrey{
+              margin: 4px;
+              padding: 4px;
+              background-color: #6b0909;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgreenb{
+              margin: 4px;
+              padding: 4px;
+              background-color: #00a3aa;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+
+    .topbox p{
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .topbox a:link, .topbox a:visited, .topbox a:hover, .topbox a:active{
+      font-size: 13px;
+      font-family: "Segoe UI";
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+      #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #040105; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+  }
+
+  #myBtn:hover {
+    background-color: rgb(92, 88, 88); /* Add a dark-grey background on hover */
+  }
+
+    </style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta name="csrf-token" content="wXynlILkf54IMGBJKEatn77WfthBJTVpO92zrKCS">
+<title>agustinprs</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<link href="css/app.css" rel="stylesheet">
+<link href="css/frontstyle.css" rel="stylesheet">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119390166-1"></script>
+<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-119390166-1');
+  	</script>
+
+<meta property="og:title" content="Lokus">
+<meta property="og:description" content="Dansk GTA / SAMP roleplay community">
+<meta property="og:image" content="img/rodeo.png">
+<meta property="og:url" content="https://discord.gg/nnRCqvaKUG">
+</head>
+<body>
+<div id="app">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="index.html"> <img height="40" src="img/rodeo.png" /></a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="bienvenida.html">Inicio
+</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="https://discord.gg/nnRCqvaKUG">Discord</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="http://paypal.me/Lokusplay">Donaciones</a>
+</li>
+<li>
+<a class="nav-link" href="index.html">Foro</a>
+</li>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+</div>
+</nav>
+</div>
+<div class="container pagepadding">
+<div class="row">
+<div class="col-md-12">
+<div class="topbox" align="center">
+<a href="#basico" /><div class="topboxagustinprs">BASICO</div></a>
+<a href="#roleplay" /><div class="topboxdanger">GENERAL</div></a>
+<a href="#Zona seguras e ilegales" /><div class="topboxinfo">Zona seguras e ilegales</div></a>
+<a href="#Policia" /><div class="topboxwarning">Policia</div></a>
+<a href="#LSMS" /><div class="topboxsuccess">LSMS</div></a>
+<a href="#Poder judicial y abogados" /><div class="topboxsort">Poder judicial y abogados</div></a>
+<br /><br />
+<a href="#Robos y secuetros a jugadores" /><div class="topboxgult">Robos y secuetros a jugadores</div></a>
+<a href="#Robo a establecimiento" /><div class="topboxlightgreen">Robo a establecimiento</div></a>
+<a href="#Content Creator" /><div class="topboxbrown">Content Creator</div></a>
+</div>
+<div align="right"><br /><p>Ultima actualizacion <i>15/04/2021</i></p></div>
+<div class="error-notice">
+<div class="oaerror Lokus" id="basico">
+<h5>CONSEPTO BASICO</h5>
+<hr>
+<p><strong>0.0: OCC [Out Of Character]</strong> : significa en español fuera del personaje, es decir, que nosotros al hablar OOC estamos hablando desde nuestra persona, no del PJ de hemos creado.</p>
+<hr>
+<p><strong>0.1 IC [In Character]</strong> : Significa en español dentro de rol, es decir,  lo que estas escribiendo tu personaje lo esta diciendo de forma hablada.</p>
+<hr>
+<p><strong>0.2 PG [PowerGame]</strong> : A la accion roleada con tu personaje que sean totalmente imposible de realizar en la vida real, este consepto es muchas veces mal interpetado, EJEMPLO, asecinar a una persona enfrente de un policia eso es PG.</p>
+<hr>
+<p><strong>0.3 MG [MetaGaming]</strong> : Es confundir canal IC y/o OOC. Tambien es utlizar informacion OOC con IC, por ejemplo, Tu heres Policia, y en el foro ves que ese restaurante es de una mafia, Tu OOC lo sabes pero IC no lo sabes, [MG] es llevar informacion OOC a IC.</i></p>
+<hr>
+<p><strong>0.4 DM [Death Match]</strong> : La misma esta relaccionada con la agrecion fisica o verbal, u ocacionar disturbios o daños, matar a otra persona sin ninguna razon aparente. por ejemplo, vas caminado por la calle y ves a una persona... y lo matas y lo agredes sin razon, eso es DM.</p>
+<hr>
+<p><strong>0.5 RK [Revenge Kill]</strong> : Su traduccion seria "Matar por venganza", se define volver al lugar de donde mueres y seguir en el tiroteo o matar al asesino... NRCA [No rol de cambiar armas], se define como no realizar el rol de no cambiar armas.</p>
+<hr>
+<p><strong>0.6 PK [Player Kill]</strong> : Cuando el jugador no tiene intencion de que su personaje muera, nuetro persoanje muere contra nuetra voluntad, Se aplica el PK, Nuetro personaje originalmente pierde la memoria sobre aquello que le proboco la muerte, por ende ningun rol relaccionado con esa muerte posterior al PK es valido.</p>
+<hr>
+<p><strong>0.7 CK [Character Kill]</strong> : Entendemos como CK la muerte total y absoluta del personaje... esto quiere decir que en el transcurso de la vida y el rol de tu personaje acaba, muere, su vida termina, simple ¿no?.</p>
+<hr>
+<p><strong>0.8 /ME</strong> : Comando "/me": Se usa este comando para realizar acciones dentro del personaje cuando no tenemos una opción de usar las animaciones del servidor. El comando siempre se deberá de escribir en tercera persona y detallando lo máximo posible la acción de nuestro personaje..</p>
+<hr>
+<p><strong>0.9 /DO</strong> : El comando “/do” también sirve para preguntar cosas sobre el rol, sobre todo las reacciones que podría tener otro personaje al interactuar con él con un “/me” para muestra, el ejemplo de esposar a un sospechoso que se le ha visto cometer un acto delictivo.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror danger" id="roleplay">
+<h5>CONSEPTO GENERAL</h5>
+<hr>
+<p><strong>1.0 Interaccion con el personaje</strong> : En la interacción de roles, los participantes adaptan el papel o rol de un PJ parte o grupo que pueden tener personalidades, motivaciones y trasfondos diferentes de el.</p>
+<hr>
+<p><strong>1.1 Para de rol</strong> : Bajo ningún motivo podrás parar el rol, si en algún momento ves algo reportable o algún jugador no esta cumpliendo con la normativa, se recomienda grabar la situación y mas adelante hablar con el usuario antes de reportarlo.</p>
+<hr>
+<p><strong>1.2 Valorar la vida</strong> : No valorar tu vida será motivo de sanción, tienes que actuar como lo harías en la vida real priorizando tu vida.</p>
+<hr>
+<p><strong>1.3 Edad minima</strong> : Para jugar a Rodeo RP tienes que tener como mínimo 15 años, si no es así, habla con el miembro del staff para hacer una excepción.</p>
+<hr>
+<p><strong>1.4 Entorno y Auxilios</strong> : Todas las llamada de /Entorno y /Auxilios nunca podrán ser falsas, ni podrán ser utilizadas para engañar a un Policía, el /Auxilio le llegara a los EMS que irán rápidamente hacia ese lugar raleando que los ciudadanos les llamaron.</p>
+<hr>
+<p><strong>1.5 Anuncios</strong> : Abrir un negocio, a un fugitivo o al hacer una fiesta, tienes que colocar /Anuncio, los anuncios relevantes se publicaran en el apartado de Noticias en Discord solicitándoselo a un Moderador, Administrador, Ayudante o Staff.</p>
+<hr>
+<p><strong>1.6 Fair Play</strong> : El significado de Fair Play no es mas que el juego limpio, se trata del comportamiento y equilibrado dentro del juego, la idea de esto es que des chance a otra persona y viceversa.</p>
+<hr>
+<p><strong>1.7 Modulador</strong> : El usuario podrá usar modulador siempre y cuando tenga la aprobación del Staff.</p>
+<hr>
+<p><strong>1.8 Investigacion</strong> : Cuando se haga el uso de /Entorno por a ver cometido un delito los policías lleguen a la zona del delito. puede llevar un rol de investigación mediante el uso del /dm con el delincuente. así pueden hacer pregunta mediante el sistema de mensajes privado.</p>
+<hr>
+<p><strong>1.9 Rol de entorno</strong> : El rol de entorno es todo aquello que rodea a nuestro personaje y a la ciudad, en las calles, a pesar de la poca cantidad de NPC´S, siempre habrá mas rol de entorno. El rol de entono se aplica base de distintas facciones, es decir, en la comisaria no solo habrá policías conectados, sino que existirá todo un regimen policial, así como en una base criminal no solo estarán solo estará miembros de dicha facción, sino que por rol de entorno habrá muchas mas</p>
+<hr>
+<p><strong>1.10 Evadir rol</strong> : Evadir rol significa ignorar un rol de forma intencionada, ya sea desconectándonos o de alguna manera evadir la realización de dicho rol. Cualquier problema de caída y/o problemas para abandonar el rol, ha de ser comunicada con la persona en cuestión por discord.</p>
+<hr>
+<p><strong>1.11 Faltas de respeto</strong> : Toda falta de respeto que se produzca a algún miembro de la comunidad será castigado de forma administrativa. Las faltas de respetos de forma IC, serán respetadas y se podrá utilizar si la situación lo requiere.</p>
+<hr>
+<p><strong>1.12 Reportes</strong> : Todo reporte por incumplimiento de la normativa ha ser presentado formalmente en el apartado de Discord (Reportes). Se recomienda hablar por ambas partes de forma civilizada y si no llega a ninguna solución puede proceder con el reporte, no se permitirán discusiones en este apartado.</p>
+<hr>
+<p><strong>1.13 Uso de chat de voz y el chat de texto</strong> : Como se ha indicado, se utilizara en todo momento de forma IC, no se podrá salir de rol utilizando el chat de voz, cualquier persona que salga de rol por el chat de voz será castigada administrativamente.</p>
+<hr>
+<p><strong>1.14 Comando /Me y /Do</strong> : En este servidor están implementados ciertos comandos para representar las acciones de nuestro personaje, acciones que no existe dentro de Samp o que no hay animación para ello.</p>
+<hr>
+<p><strong>1.15 Uso de armas y violencia</strong> : Para hacer uso de armas, o de la violencia ya sea física o verbal, siempre debe haber un rol previo que lo justifique, la única excepción a este punto es en las zonas ilegales, donde no se necesita rol previo para realizar actos violentos contra otros usuarios. En el caso de amenazar a alguien con un arma, siempre debes dale tiempo suficiente para que pueda acatar tu petición antes de disparar. Quedan prohibido llevar en el inventario armas largas y equiparlas justo cuando se va hacer uso de ella. Si se hace un rol que implique su uso, deberá llevar equipada desde el comienzo del rol. No puedes disparar desde un vehículo siendo conductor a menos que te encuentres totalmente detenido. El copiloto/acompañante podrá disparar siempre y cuando tenga el Angulo correcto con el vehículo en movimiento. Queda prohibido disparar a jugadores o NPC´s. Si se podrá disparar a otro vehículo(carricera, motor, ruedas, etc.) El cuero policial tiene permiso a disparar a matar desde el helicóptero, siempre y cuando se cumplan con las siguientes condiciones: 1- El tirador debe estar colocado en la parte trasera del helicóptero y este se encuentre prácticamente estable. 2- Asimismo, deberá estar paralelo contra el objeto. Es decir, el tirador debe tener tiro limpio y directo. 3- Se debe haber recibido fuego previo. No se podrá usar el rifle de francotirador en movimiento, ni en la calle. 4- Es obligatorio indicar por medio de un /Me "Acopla el biporte al rifle y lo posa sobre la cornisa". Una vez que el jugador quiera moverse, deberá indicar por /Me "Quita el biporte del rifle".</p>
+<hr>
+<p><strong>1.16 Ajustes de cuentas</strong> : Para realizarse algún ajuste de cuanta a un usuario hace falta tener motivo de peso, unos insultos como tal no se cuentan como motivo para un ajuste de cuenta, solo contara en el caso de que sea muy reiterado. El ajuste de cuenta debe hacerse a la persona en cuestión que tuvo el rol previo. Si quieres realizar un ajuste de cuenta con un tercera (Ej. Amigos, familiares, parejas, etc; solo se podrá secuestrar, pero no hacerle un PK, y se aplicaran esta normativa en un secuestró normal). Para realizar un ajuste de cuenta hay que considerar el estatus social de la persona o el grupo que lo va a efectuar. Si quien realiza el ajuste de cuenta es civil, se podrá ser máximo 3 participantes en el rol. Si el ajuste de cuenta es realizado por una organización criminal podrán ser máximo 6 participantes en el rol (Todos los participantes deberán ser miembros de la misma organización para llevar a cambo el rol). Si en el ajuste de cuenta se realiza un PK a la victima, debe a ver como mínimo 3 policías de servicio, si se realiza un secuestró para hacer una ajuste de cuenta, será requerido como mínimo 4 policías de servicio. Si el ajuste de cuenta se le hace a un policía de servicio, deberá a ver como mínimo 4 policía de servicio (incluyendo el policía en cuestión) para hacerle un PK o secuestrarlo. Si la persona a la que se ejecuta en el ajuste de cuenta sufre un PK en el rol, no podrá acordarse de nada, ni siquiera el motivo que lo ha llevado a esa situación. Es trabajo y obligación de los que ejecutan el ajuste de cuenta dejarle algún tipo de recordatorio en el caso de hacerle un PK o no llevaría hasta ese extremo para que recuerde el rol y por que se le ha hecho, Ej.: se le podrían dejar un mensaje/nota o posterior como: (la próxima vez que decidas a delatar a Rick con la policía lo pensaras dos veces!).</p>
+<hr>
+<p><strong>1.17 Máximo de jugadores en roleos agresivos</strong> : En el caso de los civiles, no podrá haber mas de 4 civiles participando en un mismo rol agresivo. La cantidad máxima de participantes puede disminuir si se trata de un rol especifico detallando la normativa. En el caso de las organizaciones criminales, no podrá a ver mas de 7 miembros participando en un mismo rol agresivo. La cantidad máxima de participantes puede disminuir si se trata de un rol especifico detallando la normativa. Si los participantes del rol agresivo hay jugadores con diferente estatus social delictivo (Por ejemplo: hay 3 miembros de una banda, 1 de una organización criminal y 2 civiles). Se van a regir por el máximo de participantes del estatus social mas bajo. Ejemplo: Si hay 6 miembros de una organización criminal. Se rigira por el estatus social del civil, por lo que no puede participar mas de 4.</p>
+<hr>
+<p><strong>1.18 Vehiculos</strong> : Queda prohibido hacer uso del vehículo como arma contra peatones. Solo se permite usar el auto para intentar detener o volcar otro auto en una persecución policial. Esto se coincidiera VEHIDE DEATHMATCH (VDM). los jugadores no podrán utilizar vehículos de su trabajo ya sea White listeado o no White listeado para uso personal. Solo se podrán usar con el fin de desempeñar o cumplir su función con el trabajo en cuestión. Los vehículos del estado (coches, patrullas, sanitarios, emergencias, camiones de basura, repartidores etc), no podrán ser robados ni utilizados por gente que no pertenezca a dicha facción, ni tampoco se podrá robar las cosas que haya en su interior.</p>
+<hr>
+<p><strong>1.19 Uso de Gopro´s, Localizadores, inhibidores de frecuencias y funcionamiento de camaras</strong> : Esta prohibido ralear el uso de una GoPro al grabar  con el programa externo al juego, toda las grabación del juego podrá ser utilizada únicamente de manera OCC ya sea para video de creador de contenido o reporte. De igual manera, tampoco esta permitido ralear que uno lleve consigo un Localizador. Los únicos que pueden ralear estos son aquellos usuarios que pertenezcan a una facción White listeadas, este de servicio y tenga acceso al mapa interactivo de llamados. El uso de inhibidores de frecuencias queda únicamente reservados para las mafias y podrán ser usados exclusivamente dentro de vehículo o de manera local. Las únicas cámaras validas para su rol son aquellas que se encuentran físicamente existente, las que poseen los vehículo de emergencia (policía, servicio  medico, bomberos, etc.), de bancos (camión blindado, cajeros, sucursales), dentro de los hospitales y comisarias (y por fuera, hasta 50m).</p>
+<hr>
+<p><strong>1.20 Llamdas falsas a servicios</strong> : Esta prohibido hacer llamadas falsas a cualquier servicio ya sea policía, EMS, medico, taxis, etc. También esta prohibido realizar llamados sean falsos o verdaderos con el fin de robarle al miembro de cualquier facción. Las llamadas sin texto podrán ser ignorados.</p>
+<hr>
+<p><strong>1.21 Actos sexuales/violaciones</strong> : Cualquier tipo de rol relacionado con acciones sexuales en mayor o menor grado, deberá contar con el consentimiento de los jugadores implicados. Los Mismo pueden contar con animaciones +18, comandos /Me y /Do, chat de voz y cualquier via que permita este tipo de rol. En lo que respecta los roles de violación o abusos sexuales, estos están totalmente prohibido desde cualquier punto de vista, con o sin el consentimiento del usuario de manera OOC. Realizar cualquier acto de índole polémico, siempre deberá ser aceptado entre todos los integrantes del mismo y NO podrá ser streameado o grabado para su posterior difusión.</p>
+<hr>
+<p><strong>1.22 Hacks/Aprovecharse de fallos/Glitchs</strong> : Utilizar hacks, cheats, exploits, mods, inyectable o cualquier programa o tercero que te ayude a tener un ventajas frente al resto va a conllevar a un permeaban. Aprovecharse de bugs del juego, o de script del servidor para el beneficio propio o de un tercero en vez de reportarlo con administración, será agravante sancionado.</p>
+<hr>
+<p><strong>1.23 Mascaras</strong> : Este tendrá un uso especial, generalmente en el ámbito delictivo, ya que al tenerlas te oculta la identidad casi completa del personaje. Al llevar puesta la mascara, seria irreconocible por voz. Una mascara completa, (Ej: Pasamontañas), cubre en total los rasgos facial de tu personaje (Pelo, color de ojos, nariz, boca, cicatrices y tatuajes faciales, etc). Una mascara parcial (Ej: Una bandana) cubrirá los rasgos faciales que esta misma tape, no obstante, si se utiliza con otros objetos que también cubran otro rasgos, tendrán el mismo funcionamiento que una mascara completa, incluyendo el reconocimiento por voz. Tener SOLO una mascara parcial (Ej: bandana, barbijo/tapabocas), si se podrá reconocer por la voz, por lo que SI sus reconocible. Cualquier podrá sacarte la mascara con los /Me y /Do apropiados, no podrás ralear que la tienes pagadas o cosida a la cabeza, no tendría sentido.</p>
+<hr>
+<p><strong>1.24 Cambios de nombre</strong> : Los cambios de nombre solo se podrán hacer mediante una solicitud en el apartado de discord "Ticket", lo que podrá ameritar a un borrado total del personaje (CK).</p>
+<hr>
+<p><strong>1.25 Radio</strong> : El servidor cuanta con un script de radio frecuencias incorporado, Cada usuario podrá conectarse a una frecuencias y compartirla con quien lo desee. No así las radios exclusivas de la facción White listeadas. No es necesario usar programas de voz externos y esta completamente prohibido el uso de estos programas mientras nos encontramos IC desarrollando nuestro rol. El incumplimiento de esta norma conllevara a una sanción administrativa grave ya que se considerara MG. Siempre hay que valorar las condiciones en la que nuestro personaje esta. Por ejemplo, si estamos acorralados y nos están apuntando con un arma, no podremos hacer uso de la radio para pedir auxilio, ya que no estaríamos valorando nuestra vida. El mismo caso se puede aplicar a un arresto. Si estamos esposados/arrestados será imposible pedir ayuda.</p>
+<hr>
+<p><strong>1.26 Leyes</strong> : La ciudad, como cualquier otra, se rige por leyes y se castiga con pena de cárcel y monetarias a los que las incumplan. Como ciudadanos se recomienda una asidua lectura y consulta.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror info" id="Zona seguras e ilegales">
+<h5>Zona seguras e ilegales</h5>
+<hr>
+<p><strong>2.0 Zona segura</strong> : Las zonas seguras son aquellas donde no se pueden cometer actos delictivos (robar, secuestrar, y nada malo para el personaje), ni se pueden incoar roles agresivos siempre y cuando no existan un rol previo exceptuando las comisarias y hospitales, ya que siempre son zonas seguras. Cabe aclarar, que tampoco se pueden robar autos y otras pertenencias de NPC en estas zonas.</p>
+<hr>
+<p><strong>2.1 Cuales son las Zonas seguras</strong> : Actualmente las zonas seguras son las siguiente:</p>
+<p>•► Comisaria y Hospitales. (Independientemente si utilizados o no. Se respeta el RDE).</p>
+<p>•► Bancos y Cajeros automáticos (un diámetro de 30mts a la redonda del punto de extracción de dinero.) Los bancos pueden atracarse, por lo que dejan de ser zonas seguras al momento de hacerlo.</p>
+<p>•► Tiendas de ropas, armería y Concesionarios. (Tanto el de CarDealer como el normal).</p>
+<p>•► Taller de Mecánicos, hasta un diámetro de 100mts desde e centro de los lugares.</p>
+<p>•► Sedes de trabajos. No White listeado (granjeros, ecologista, remolcador, etc.) y mercado central.</p>
+<p>•► No se podrán llevar mascaras ni nada que impida el reconocimiento dentro de las zonas seguras Independientemente de la facción a la cual pertenezca al individuo.</p>
+<p>•► No se podrán "campear" las salidas exactas de las zonas seguras o viviendas para realizar actos delictivos.</p>
+<p>•► Las tiendas de comidas que posean un cajero, <strong>NO</strong> son zonas seguras. Salvo que, quien seria atracado, este usando el cajero en ese mismo momento.</p>
+<p>•► Los garajes, <strong>NO</strong> son zonas seguras y esta prohibido su uso de permanencias como punto de encuentro, se utilizan para tomar y dejar el auto.</p>
+<p>•► El Gabrieles <strong>NO</strong> es zona segura, no obstante, esta <strong>prohibido</strong> el robo o secuestro a trabajadores del mismo (tenderos/almaceneros) o de la mercadería que manejen.</p>
+<hr>
+<p><strong>2.2 Zonas ilegales y conflictivas</strong> : Se le llama zonas ilegales a aquellos lugares donde se lleva a cabo procesos de droga, compra y venta de objetos ilegales, Dark Web, etc.</p>
+<p>•► Se considera zona conflictiva cualquier territorio que pertenezca a una organización criminal.</p>
+<p>•► Los roles agresivos en dichas ubicaciones se podrán realizar sin rol previo.</p>
+<p>•► No será necesario una cantidad mínima de policías para llevar a cabo dicho roles.</p>
+<p>•► <strong>SI</strong> se deberán dictar los /entornos o /auxilios si el RDE es adecuado.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror warning" id="Policia">
+<h5>Policia</h5>
+<hr>
+<p><strong>3.0 Números máximo de policías conectados y renuncias a la facción</strong> : Se queda establecido que no podrán haber mas de 24 policías conectados estando de servicio simultáneamente. La única excepción que se podrá dar a esta regla es para roles puntuales con previa autorización de la administración.</p>
+<p>•► Se deberá dividir entre 12 LSPD y 12 LSSD.</p>
+<p>•► Una vez llegado al tercer rango jerárquicos, si desea renunciar a la policía (o es dependiendo) Deberá presentar su renuncia frente al Jefe de la LSPD o de la LSSD y es determinaría si el CK seria, o no, necesario. Durante el tiempo hasta que se realice el CK, el usuario seguiría perteneciendo a la facción, por lo que no puede incumplir las normas internas.</p>
+<hr>
+<p><strong>3.1 Corrupción</strong> : Esta completamente prohibido desempeñar el rol de una policía corrupto, o hacer actos que rocen la misma, salvo si esta aprobado y gestionado por la administración. Hacer caso omiso a esta norma podrá llevar consigo sanciones tanto IC como OOC.</p>
+<p>•► Se establece que los policías deberán, en primeras instancias, llevar un trato justo y cardinal con los demás civiles. Sin embargo, la interpretación del personaje y la personalidad del mismo queda al criterio de uno, por lo que tendrá que usar su sentido común si quiere desarrollar un personaje de policía agresivo sin incurrir en un sanción.</p>
+<hr>
+<p><strong>3.2 Uso de armas</strong> : Cada policía cuanta con su equipamiento para llevar a cabo su servicio y su rol como oficial. No se deberán aprovechar de su capacidad armamentística ni poder in gane.</p>
+<p>•► Los policías deberán tener criterio a la hora de elegir que armamento usar para contrarrestar las diferentes amenazas. Si un policía se enfrenta a delincuentes con pistolas, los policías deberán utilizar pistolas también. Si los delincuentes usan armas automáticas, los policías podrán usar sus carabinas.</p>
+<p>•► Las armas reglamentaria son: escopeta (siempre guardada en el patrulla. Solo será solicitada por un alto cargo o cuando la situación lo amerite), pistola, porra y taser.</p>
+<p>•► El equipamiento complementario y reglamentario es: linternas, pistolas de bengalas y gas lacrimógenos  (este ultimo solo lo autorizara un alto rango en caso de ser requerido).</p>
+<p>•► Esta totalmente prohibido poseer material policial fuera de servicio.</p>
+<p>•► La policía solo utilizara un arma letal en caso de que su vida corra peligro. El funcionario deberá recordar que debe valorar su vida en todo momento.</p>
+<p>•► Tener el cuanta le armamento establecidos em la normativa interna de la facción.</p>
+<hr>
+<p><strong>3.3 Garantías a civiles</strong> : Se establece que los policías deberán, en primera instancia, llevar un trato justo y cordial con los demás civiles. Sin embargo, la interpretación del personaje y la personalidad del mismo queda a criterio de uno, por lo que tendrá  que usar el sentido común si pretende desempeñar el rol de un personaje agresivo sin incluir en una sanción.</p>
+<p>•► El LSPD/LSSD tiene la obligación de leer los derechos al detenido antes de entrar en comisaria o en el parking. Si se procesa al detenido sin haberle leído los derechos, este podría solicitar un Habeas Corpus.</p>
+<p>•► El LSPD/LSSD podrá emprender acciones legales contra una persona si esta denunciada por cualquier ciudadano y si se llega a la conclusión (o si tienen indicio) de que el denunciado ha cometido un crimen o acto delictivo.</p>
+<p>•► El LSPD/LSSD debe actuar y ralear en función de la normativa interna en todo momento.</p>
+<p>•► Queda totalmente prohibido robar armamento policial a la LSPD por parte de los jugadores. Solo se podrán robar objetos tales como teléfonos, ganzúa, dinero, etc.</p>
+<p>•► El LSPD/LSSD debe garantizar un trato cordial y darle prioridad a la LSMS y los integrantes de la misma.</p>
+<hr>
+<p><strong>3.4 Atracos</strong> : Los policías que hayan muerto durante un atraco, secuestró o robo no podrán reincorporarse al rol en curso.</p>
+<p>•► Una vez iniciado el atraco, secuestró o robo, la policía no podrá solicitar refuerzos. (ver REFUERZOS).</p>
+<p>•► Ambas partes, tanto policías como atracadores, están obligados a respetar las negociaciones en todo momento.</p>
+<p>•► En atraco, la policía tiene derecho a cortar negociaciones en el caso de que no haya rehen o este sea agregado por el atracador.</p>
+<p>•► Si la policía se ve enfrentada a un grupo de delincuentes que es 3 veces mayor en números que ellos podrán utilizar sus encopetas para disuadir la agresión Independiente de las armas de los delincuentes.</p>
+<p><strong>EJEMPLOS</strong></p>
+<p>•► 1 policía contra 3 delincuentes - Si se puede usar su escopeta.</p>
+<p>•► 2 policía contra 6 delincuentes - Si se puede usar su escopeta.</p>
+<p>•► 3 policía contra 8 delincuentes - No pude usar su escopeta.</p>
+<p>•► 3 policía contra 9 delincuentes - Si se puede usar su escopeta.</p>
+<p><strong>3.5 Refuerzos</strong> : Solo podrán incorporarse a modo de refuerzos la misma cantidad de policías que haya sido abatido en alguna intervención policial una única vez. No deberán ser los mismo policías que fueron abatidos previamente ya que deberán cumplir con el rol de tratamiento medico adecuado. Ej.: Si en una intervención donde se encuentran 5 policías, abaten 2, podrán incorporar dos nuevos refuerzos reemplazando a las caídas, pero si vuelven abatir policías, no se podrán volver a solicitar refuerzos, por lo tanto, se mantendrá la misma cantidad asta que termine el rol.</p>
+<hr>
+<p><strong>3.6 Legalidad de distintas armas u objetos</strong> : Se estipula que todas las armas conseguidas legalmente y teniendo las licencias correspondientes (a excepción de las armas blancas/contusión, que no requieren licencia), serán legales siempre y cuando NO se usen para cometer actos ilícito, demás esta decir que estarán regulada por el CODIGO PENAL.</p>
+<p>•► Cualquier herramienta U objeto, que pueda utilizase como arma, no puede considerarse ilegal mientras no haya sido usado para un fin ilegal. Pero al igual que en el punto anterior, puede ser regulada o limitada en el CODIGO PENAL.</p>
+<p>•► Los chalecos son un uso exclusivo de la LSPD o la LSSD, tener en posesión alguno y no ser de dicho cuerpo, conllevara un cargo IC ya que será ilegales.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror success" id="LSMS">
+<h5>LSMS</h5>
+<hr>
+<p><strong>4.0 Asistencia medica</strong> : El servicio medico de la ciudad, esta dividida en el sistema de emergencia sanitaria (EMS: Emergency Medical Service) y los trabajadores de los hospitales. Es importante aclarar ya que un paramédico no cumpliría las mismas funciones que un trabajador del hospital.</p>
+<p>•► Se conoce a toda la facción de la salud, como los Santos Medical Service.</p>
+<p>•► Todo el personal medico, sin excepción alguna. Tiene el deber y la obligación de dar asistencia a todos los jugadores del servidor, sin importar cualquier tipo de enemistad o conflicto entre doctores y el paciente.</p>
+<p>•► El material medico del que dispone debe ser única y exclusivamente para realizar su trabajo.</p>
+<hr>
+<p><strong>4.1 Protección al medico del servicio</strong> : Esta completamente prohibido atacar, robar, secuestrara o cometer cualquier tipo de acto ilícito o rol agresivo en contra de un LSMS (EMS, doctores, etc) que se encuentre de servicio. La única excepción que se le puede dar a esta regla, es en el caso de que otro jugador lo amenace con instrucciones claras y consiste, atentado contra su vida con algún arma o artefacto que pueda resultar letal, para que se retire de una zona, no atienda a policías u a otro jugadores.</p>
+<p>•► Cabe señalar, que una vez estos estén fuera de servicio, serán tratados como cualquier otro civil.</p>
+<hr>
+<p><strong>4.2 Prioridad de atención medica</strong> : En el caso de que un medico se encuentre en una situación donde hay policías, abatidos, siempre deba atenderlo a estos primeros antes de atender al resto, la única excepción que se puede dar aquí, es en el caso de otro jugador amenazo y atente contra la vida del medico, para que no trate a los policías y priorice a otros heridos.</p>
+<p>•► Los LSMS solamente podrán atender un caso a la vez, Independientemente la facción a la cual pertenezca el paciente.</p>
+<p>•► Los LSMs deberán tener un trato cordial y darle prioridad a los LSPD - LSSD, salvo que la LSMS este con un paciente.</p>
+<hr>
+<p><strong>4.3 Corrupción</strong> : Durante las horas de servicios se tiene totalmente prohibido que los miembros del cuerpo medico sean corrupto bajo ningún concepto. No pueden evadir ningún protocolo medico ni hacer la vista gorda a cambio de algún tipo de beneficio ni a ninguna amistad.</p>
+<p>•► Ningún medico de la LSMS podrá utilizar la información que haya sido recaudada estando de servicio con la finalidad de usarla fuera de servicio en beneficio propio o de terceras personas.</p>
+<hr>
+<p><strong>4.4 Actos ilicito y renuncias</strong> : Los miembros de la LSMS tienen siempre <strong>siempre prohibido</strong> cometer cualquier acto ilegal que arremeta con el código ético el cual ellos deben regirse, es decir, no podrán secuestrar, robar, asesinara, tortura, etc a otro jugador. Tampoco podrán robar establecimiento. Cualquier otro acto ilícito que no arremeta con la integridad física de otro jugador, podrá tener consecuencias de manera IC.</p>
+<p>•► Los LSMS no podrá ser miembro de ningún tipo de Organización Criminal, no obstante, mientras respeten los puntos anteriores, podrán colaborar con estas, siempre y cuando estén fuera de servicio.</p>
+<p>•► Una vez llegado la tercer rango jerárquico, si desea renunciar a la LSMS (o es despedido) deberá presentar su renuncia frente al Jefe de la LSMS y este determinaría si el CK seria, o no, necesario. Durante el tiempo hasta que se realice el CK, el usuario seguirá perteneciendo a la facción, por lo que no puede incumplir las normas internas.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror sort" id="Poder judicial y abogados">
+<h5>Poder judicial y abogados</h5>
+<hr>
+<p><strong>5.0 Poder judicial</strong> : En un principio, es el organismo que se encarga de realizar los distintos juicios y condenas que puede haber en servidor. Lo manejaría la moderación, siendo esta y desde las imparcialidad, actuando de manera legal y de carácter IC, en base a las distintas pruebas que se presentan, tomaran una decisión.</p>
+<p>•► Cabe a destacar que, al presentar algún tipo de denuncia IC, debería hacerse a la policía. El Poder Judicial funciona solamente para casos específicos donde haya que ir a juicio, generalmente por desmantelamiento de organizaciones criminales.</p>
+<p>•► Deberá solicitarse por Discord, de manera propia, siendo así la presentación de todas las pruebas necesarias y de manera "legal". Deberá solicitarse como lo hicieras de forma IC.</p>
+<hr>
+<p><strong>5.1 Abogados</strong> : Serán ciudadanos que deseen defender al sujeto en cuestión, tanto frente al juicio como en una apelación. Deberán ser jugadores con un buen conocimiento de las leyes IC y, que tenga un rol decente. Por el momento, los eligiera la administración cuando se solicite.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror gult" id="Robos y secuestros a jugadores">
+<h5>Robos y secuetros a jugadores</h5>
+<hr>
+<p><strong>6.0 Normas básicas</strong></p>
+<hr>
+<p>•► Para realizar un robo otro jugador, deberá ser un mínimo de 3 policías conectados y de servicios.</p>
+<p>•► Para realizar un robo a policía, este tendrá que estar de servicio y, además, deberá haber mínimo 4 policías conectados y de servicio. No se podrá robar armamento policial, pero si otros objetos. No se podrá robar los ítems que se encuentran en las patrullas policiales.</p>
+<p>•► El farreo abusivo de armas sin rol previo de cualquier facción, será sancionado.</p>
+<p>•► No se podrá robar a un policía estando muerto.</p>
+<p>•► Si el jugador colabora, ya sea en el secuestro o cuando le están robando, no se le podrá hacer un PK al final de este. Por otro lado, si este ni colabora ni coopera con el ladrón o el secuestrador, este ultimo podrá realizarle un PK. La única excepción a esta regla, es en el caso de que haya un ajuste de cuanta pendiente contra a la persona que se le esta robando o secuestrando, en esos casos si se le puede realizar un PK al final, pero deberá respetar las reglas del ajuste de cuanta.</p>
+<p>•► Si bien la persona esta obligada a colaborar para valorar su vida, tanto en los secuestros, como en los robos y en los ajustes de cuenta, no se pude obligar a la persona hacer cosos humillantes o ilegales.</p>
+<p>•► En los robos, únicamente se puede robar las pertenencias que la persona lleve encima y las del vehículo en el que este ocupando en el momento del robo.</p>
+<p>•► El secuestró solo puede realizar a un jugador, no se puede ralear un secuestró a un NPC´s para sacar beneficio al mismo.</p>
+<p>•► No esta permitido el secuestró de cuerpos inconscientes provenientes de un PK. Ej.: Luego de un tiroteo, los afectados que estén heridos o inconscientes, no podrán ser movidos del lugar salvo al llevarlo a un Hospital u ocultarlo en el alrededores para evitar que no sean encontrados.</p>
+<p>•► No se podrá tener a un secuestrado por mas de 45 minutos. Las únicas excepciones que se pueden dar a esta regla, es en el caso de que el secuestrado este usando como rehen en algún robo ya sea tienda, banco etc... En el caso de que este siendo secuestrado para ajustes de cuenta, o en el caso de ser usado para una petición de dinero o cambio de rehen.</p>
+<p>•► Si tiene un rehen secuestrado para un robo de tienda, sucursal de banco u otro, y llegan a romper las negociaciones. A pesar de que el rehen hayan colaborado, los secuestradores podrán hacer un PK.</p>
+<p>•► Esta totalmente prohibido usar a un amigo de rehen para un intercambio con la policía.</p>
+<hr>
+<p><strong>6.1 Robo a un civil</strong></p>
+<hr>
+<p>•► Para robarle a un civil será necesario como mínimo 3 policías de servicio.</p>
+<p>•► Habrá un máximo de 2 atracadores durante el robo.</p>
+<p>•► No podrá haber tiradores colocados en zonas altas tales como un edificio, escalera o montaña.</p>
+<hr>
+<p><strong>6.2 Robo a un policia</strong></p>
+<hr>
+<p>•► Queda prohibido el robo a un policía el cual este de servicio.</p>
+<p>•► Todo armamento policial jamás podrá ser robado, tanto como fuera y como dentro de servicio.</p>
+<p>•► Se entera como armamento policial tanto pistolas reglamentarias (Walther P99, pesadas, carabinas, etc.) como todos aquellos utensilios que faciliten de labor de un policía cuando este se encuentre de servicio, (armadura, esposas, balas, taser, etc.).</p>
+<hr>
+<p><strong>6.3 Secuestro de un civil</strong></p>
+<hr>
+<p>•► Para secuestrar a un civil será necesario como mínimo 4 policías de servicio.</p>
+<p>•► Podrá haber como un máximo de 4 secuestradores en el momento del secuestro, luego para posterior mas, se pueden adicionar mas.</p>
+<hr>
+<p><strong>6.4 Secuestro a un policía de servicio</strong></p>
+<hr>
+<p>•► Para secuestrar a un policía será necesario como mínimo 5 policías de servicio.</p>
+<p>•► Podrá haber como un máximo de 4 secuestradores en el momento del secuestro, luego para posterior mas, se pueden adicionar mas.</p>
+<hr>
+<p><strong>6.5 Petición de rescate por un civil</strong></p>
+<hr>
+<p>•► Solo las Organizaciones Criminales podrán llevar a cabo este rol de intercambio por dinero a cambio de rehenes.</p>
+<p>•► Solo podrá haber un máximo de 6 secuestradores (incluyendo el tirador).</p>
+<p>•► Sera necesario que haya 6 policía de servicio para realizar este rol, y no podrán asistir mas de 12 policías.</p>
+<p>•► No podrá pedirse que solo un policía acuda al lugar del secuestro.</p>
+<p>•► Se podrá pedir como máximo $10.000,00 de recompensa por la vida de cada rehen secuestrado.</p>
+<hr>
+<p><strong>6.6 Peticiones de rescate por policias de servicios</strong></p>
+<hr>
+<p>•► Solos las Organizaciones Crimianles podran llevar a cabo este rol de intercambio por el dinero a cambio de rehenes.</p>
+<p>•► Solo podrán haber un máximo de 7 secuestradores (incluyendo tiradores).</p>
+<p>•► Sera necesario que haya 8 policías de servicio para realizar este rol, y no podrán asistir mas de 14 policías.</p>
+<p>•► No podrá pedirse que solo un policía acuda al lugar del secuestro.</p>
+<p>•► Solo se podrán pedir 15.000.00 de recompensas por la vida de cada agente policial secuestrado, exceptuando los rangos de la escala superior del LSPD y LSSD por lo culés se podrán pedir un máximo de 30.000.00.</p>
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror lightgreen" id="Robo a establecimiento">
+<h5>Robo a establecimiento</h5>
+<hr>
+<p><strong>7.0 Normas básicas</strong></p>
+<p>•► Los policías no podrán romper las negociaciones si los negociadores tiene un rehen con ellos. La única excepción a esta regla es en el caso de que los secuestradores agredan gravemente y pongan en riesgo la vida del rehen.</p>
+<p>•► Por otro lado. si los atracadores no tienen mas rehenes, los policías podrán romper negociaciones, siempre y cuando las negociaciones se extiendan a mas de 15 minutos, pero siempre deben priorizar a los atracadores causando el menos daño posible.</p>
+<p>•► El tiempo en el que entran los delincuentes para salir del establecimiento una vez terminada la negociación será de 15 minutos. Si al superar ese margen de tiempo los delincuentes no han salido del local se habilite a la policía a usar gases lacrimógenos u otro medio para entrar.</p>
+<p>•► Una vez el anuncio del robo en curso este publicado y las negociaciones se hayan roto, ambas bandas podrán disparar a todos aquellos que sean visto desde el perímetro del robo en curso.</p>
+<p>•► Los atracadores no podrán disparar ni amenazar al helicóptero de la LSPD durante las negociaciones, una vez esta se rompan, los tiradores y atracadores podrán dispararle al helicóptero y estos podrán responder con fuego.</p>
+<p>•► En los robos a establecimiento donde se establezcan negociaciones, solo se podrá negociar por las siguientes cosas.</p>
+<hr>
+<p>•► Por segundo de huidas.</p>
+<p>•► Por una huidas limpias (que significan quitar todas las barreras y los pinchos).</p>
+<p>•► Para que la policía no use helicóptero.</p>
+<p>•► Para que la policía no use interceptor.</p>
+<hr>
+<p>•► Así mismo, los atracadores podrán utilizar tanto rehenes como parte el botín, para negociar por lo anteriormente negociado.</p>
+<p>•► En el caso de que la policía no asista al robo, los delincuentes podrán retirarse una vez pasados 15 minutos iniciado el atraco. Si la policía llega antes de esos 15 minutos, el rol continua Independientemente al tiempo transcurrido.</p>
+<hr>
+<p><strong>7.1 Robo a casas/moradas</strong><p>
+<p>•► Para realizar un robo a casas o moradas debe haber como mínimo 3 policías en servicios y como máximo 6 policías participando.</p>
+<p>•► El numero máximo de atracadores será de 2 jugadores y no podrán haber tiradores en las inmediaciones.</p>
+<p>•► En este robo no hace falta negociar, ni tampoco hace falta esperar a que llegue la policía, los atracadores pueden escaparse cuando lo vean oportuno.</p>
+<p>•► Tener en cuenta que todos los ítems, obtenidos en el robo no son ilegales, pero por otro lado, si la policía te ve saliendo de la casa, podrá confiscarlos y dar por entendiendo que fueron robados de la casa.</p>
+<hr>
+<p><strong>7.2 Robo a tiendas</strong> : Para realizar un robo a tienda debe ser como mínimo 3 policías en servicio y como maximo 6 participantes.</p>
+<p>•► El numero máximo de atracadores será de 4 jugadores y podra haber (1) tirador en las inmediaciones, por otro lado, si podrá haber 1 persona esperando para realizar bloqueos, o gente que ayude con el plan de huidas, y este contara dentro de los 4 atracadores.</p>
+<p>•► Por cada 3 policías adicionales en servicio podrá haber otro robo a tienda, es decir, si hay 6 policía podrá haber 2 robos a tiendas al mismo tiempo.</p>
+<p>•► Deberá ser obligatorio el uso de armas de fuego para poder robarlo.</p>
+<hr>
+<p><strong>7.3 Robo a sucursales de banco (fleeca)</strong>.</p>
+<p>•► Para realizar un robo a banco debe haber como mínimo 4 policía en servicio y como máximo 8 policías participando.</p>
+<p>•► Solo se podrá haber un máximo de 4 atracadores en el caso de los civiles y 6 atracadores en el caso de ser Organización Criminal.</p>
+<p>•► Los atracadores y la policía podrán tener 1 tirador en las inmediaciones. Los atracadores podrán tener 2 personas para realizar bloqueos o ayudar con el plan de huida y estos contaran con el máximo de atracadores.</p>
+<p>•► Por cada 4 policías adicionales en servicio podrá haber otro roba a sucursales, es decir, si hay 8 policías podrá haber 2 robos a tiendas al mismo tiempo.</p>
+<p>•► Sera obligatorio el uso de rehenes y armas de fuego para poder indicar este rol.</p>
+<p>•► Podrá usarse todas las armas por parte de ambos bandos menos las explosivas.</p>
+<hr>
+<p><strong>7.4 Robo a joyería</strong>.</p>
+<p>•► Para realizar un robo a joyería debe haber como mínimo 6 policía en servicio y como máximo 10 policías participando.</p>
+<p>•► Solo se podrá haber un máximo de 4 atracadores en el caso de los civiles y 7 atracadores en el caso de ser Organización Criminal.</p>
+<p>•► Los atracadores y la policía podrán tener 1 tirador en las inmediaciones. Los atracadores podrán tener 3 personas para realizar bloqueos o ayudar con el plan de huida y estos contaran con el máximo de atracadores.</p>
+<p>•► Sera obligatorio el uso de rehenes y armas de fuego para poder indicar este rol.</p>
+<p>•► Podrá usarse todas las armas por parte de ambos bandos menos las explosivas.</p>
+<hr>
+<p><strong>7.4 Robo al banco central</strong>.</p>
+<p>•► Este robo estará habilitado solo para organizaciones criminales.</p> 
+<p>•► Para realizar un robo a joyería debe haber como mínimo 8 policía en servicio y como máximo 14 policías participando.</p>
+<p>•► Podrán ser mínimo 5 atracadores y como máximo 7.</p>
+<p>•► Los atracadores y la policía podrán tener 2 tirador en las inmediaciones. Los atracadores no tendrán limites para realizar bloqueos o ayudar con el plan de huida, pero estos no podrán superar el máximo de atracadores dado que se encuentren dentro del mismo.</p>
+<p>•► Sera obligatorio el uso de rehenes y armas de fuego automáticas o de mayor calibre (sin contar las pistolas .50) para poder iniciar este rol. Así mismo, todos los atracadores deberán contar con todas estas armas.</p>
+<p>•► Podrá usarse todas las armas por parte de ambos bandos menos las explosivas.</p> 
+</div>
+</div>
+<div class="error-notice">
+<div class="oaerror brown" id="Content Creator">
+<h5>Content Creator</h5>
+<hr>
+<p><strong>8.0 REQUISITOS</strong></p>
+<p>•► <strong>Se debelaran cumplir los siguientes requisitos para postular por el rol de Rodeo Content Creator (INFCC)</strong></p>
+<hr>
+<p><strong>Plataformas de Streams (Twitch/Facebook/etc)</strong></p>
+<hr>
+<p>•► Deberán contar con mas de 30 suscriptores y una media de 10 visualización por video.</p>
+<p>•► Mínimo de 2 directos semanales.</p>
+<p>•► Una historia solida del personaje.</p>
+<p>•► No debe poseer ningún tipo de sanción administrativa.</p>
+<hr>
+<p><strong>YouTube</strong></p>
+<hr>
+<p>•► Deberán contar con mas de 30 seguidores.</p>
+<p>•► Mínimo de 2 directos semanales.</p>
+<p>•► Una historia solida del personaje.</p>
+<p>•► No debe poseer ningún tipo de sanción administrativa.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lwd.js"></script>
+<script>
+    $(document).on('click', '.panel-heading span.clickable', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    })
+
+
+    $("#success-alert").fadeTo(4000, 1000).slideUp(1000, function(){
+        $("#success-alert").slideUp(1000);
+    });
+</script>
+</body>
+</body>
+</html>
